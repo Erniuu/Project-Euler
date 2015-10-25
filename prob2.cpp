@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Returns sum of even numbers in the Fibonacci sequence up to n.
 int fibSum(int n)
 {
 	int prev = 1;
