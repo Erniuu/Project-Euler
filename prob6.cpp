@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <cmath>
+
 // Returns the sum of squares of the first n integers.
 int sumOfSquares(int n)
 {
