@@ -9,7 +9,7 @@ int upperBound(int n)
 }
 
 // Implements Sieve of Eratosthenes algorithm for finding primes.
-int sieve(int ub)
+int sieve(int n, int ub)
 {
 	std::vector<int> primes;
 	for (int i = 2; i <= ub; i++) primes.push_back(i);
@@ -44,18 +44,14 @@ int sieve(int ub)
 	{
 		if (primes.at(i) > maxPrime) maxPrime = primes.at(i);
 		if (primes.at(i) > 0) k++;
-		if (k == 10001)
-		{
-			break;
-		}
+		if (k == n) break;
 	}
 
-	printf("%d\n", k);
 	return maxPrime;
 }
 
 int main()
 {
   int ub = upperBound(10001);
-  printf("%d\n", sieve(ub));
+  printf("%d\n", sieve(10001, ub));
 }
