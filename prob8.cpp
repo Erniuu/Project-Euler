@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Finds the greatest 13-digit product of that 1000-digit long number.
 long thirteenDigitProd(char* str, int size)
 {
     long prod, old_prod, new_prod;
