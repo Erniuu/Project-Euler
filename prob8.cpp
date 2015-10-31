@@ -6,9 +6,9 @@ long thirteenDigitProd(char* str, int size)
 
     for (int i = 0; i < 13; i++)
     {
-        prod = (long)(str[0] - '0') * (long)(str[1] - '0')  * (long)(str[2] - '0') * 
-               (long)(str[3] - '0') * (long)(str[4] - '0')  * (long)(str[5] - '0') *
-               (long)(str[6] - '0') * (long)(str[7] - '0')  * (long)(str[8] - '0') *
+        prod = (long)(str[0] - '0') * (long)(str[1] - '0')  * (long)(str[2] - '0')  * 
+               (long)(str[3] - '0') * (long)(str[4] - '0')  * (long)(str[5] - '0')  *
+               (long)(str[6] - '0') * (long)(str[7] - '0')  * (long)(str[8] - '0')  *
                (long)(str[9] - '0') * (long)(str[10] - '0') * (long)(str[11] - '0') *
                (long)(str[12] - '0');
         old_prod = prod;
